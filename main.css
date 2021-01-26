@@ -1,0 +1,221 @@
+body {  
+    --color-primary: #e33b3b;
+    --color-primaryDark: #571717;
+    --color-secondary: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+/* Top Bar Navigation Styles */
+.topBarNavigation {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.topBarNavigation-leftColumn a {
+    font-size: 1.25rem;
+    color: #000000;
+    padding: 0 0.5rem;
+    text-decoration: none;
+}
+
+.topBarNavigation-leftColumn a:hover {
+    color: var(--color-primary);
+    transition: 0.25s;
+}
+
+.topBarNavigation-middleColumn a:hover {
+    color: var(--color-primary);
+    transition: 0.25s;
+}
+
+.topBarNavigation-rightColumn a img {
+    height: 3rem;
+    padding: 0 0.5rem;
+    width: 3rem;
+}
+
+/* Initial Section */
+.section-initial {
+    height: 80vh;
+    width: 100vw;
+}
+
+.section-initial-container {
+    margin: 2rem 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.initial-header {
+    position: relative;
+}
+
+.initial-header-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+/* 
+.initial-header::after {
+    content: "";
+    position: relative;
+    right: -0.25rem;
+    width: 1px;
+    height: 3.5rem;
+    border-right: 0.25rem solid black;
+    animation: blink 0.75s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+.section-initial-header {
+    margin: 0;
+    position: relative;
+    color: #000000;
+}
+
+.section-initial-subtitle {
+    margin: 0;
+    padding-top: 2rem;
+    position: relative;
+    color: #000000;
+}
+
+.section-initial-avatar {
+    padding: 2rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.section-initial-avatar img {
+    height: 17.5rem;
+    width: 17.5rem;
+}
+
+.section-initial-avatar img:hover {
+    height: 20rem;
+    width: 20rem;
+    transition: 0.5s;
+}
+
+/* Introduction Section */
+.section-introduction {
+    height: 60vh;
+    width: 100vw;   
+}
+
+.section-introduction-container {
+    margin: 2rem 0;
+    height: 100%;
+    width: 100%;
+}
+
+.section-introduction-header {
+    margin: 0;
+    padding: 2rem 0;
+    color: var(--color-secondary);
+}
+
+.section-introduction-text {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 2rem 0;
+    justify-content: center;
+}
+
+.section-introduction-text h2 {
+    color: var(--color-secondary);
+    width: 60vw;
+}
+
+/* Experiences Section */
+.section-experiences {
+    height: 70vh;
+    width: 100vw;
+}
+
+.section-experiences-container {
+    display: flex;
+}
+
+.experiences-dotContainer {
+    text-align: center;
+}
+/* 
+.experiences-slides {
+} */
+
+.experience-sliderPrev, .experience-sliderNext {
+    cursor: pointer;
+
+}
+
+/* .experience-sliderNext {
+} */
+
+.experiences-dot {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    transition: background-color 0.6s ease;
+}
+
+.active, .experiences-dot:hover {
+    background-color: var(--color-primaryDark)
+}
+
+/* Secondary Styles */
+.primaryBackground {
+    background-color: var(--color-primary);
+}
+.secondaryBackground {
+    background-color: var(--color-secondary);
+}
+
+.lightTransparentBackground {
+    background-color: rgba(227, 59, 59, 0.2);
+}
+
+.section-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-header-main {
+    font-size: 3rem;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.section-text {
+    font-size: 1.15rem;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 0.15rem;
+}

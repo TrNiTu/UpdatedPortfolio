@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Yusei+Magic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Trey Turner | Portfolio</title>
+</head>
+
+<body>
+    <nav class="topBarNavigation secondaryBackground">
+        <div class="topBarNavigation-leftColumn">
+            <a href="">Trey Turner</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="topBarNavigation-rightColumn">
+            <a href=""><img src="assets/Brand.png"></a>
+        </div>
+    </nav>
+
+    <section class="section-initial secondaryBackground" id="section-initial">
+        <div class="section-initial-container">
+            <!-- <h1 class="section-initial-header section-header-main section-header">Aspiring Web Developer/Designer &
+                Current Student</h1> -->
+            <div class="initial-header-wrapper">
+                <h1 class="initial-header section-header-main section-header"></h1>
+                <script src="src/animatedText/initialHeaderHandler.js"></script>
+            </div>
+            <h2 class="section-initial-subtitle section-subtitle">I code and design projects to the best of my ability
+                while having a blast at the same time.</h2>
+            <div class="section-initial-avatar">
+                <img src="assets/Brand.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-introduction primaryBackground" id="section-introduction">
+        <div class="section-introduction-container">
+            <h1 class="section-introduction-header section-header">Hi, I'm Trey. Nice to meet you!</h1>
+            <div class="section-introduction-text">
+                <h2 class="section-introduction-text section-text">I'm currently a Junior studying for a Bachelor's in
+                    Computer Science at the University of Nebraska-Lincoln. Ever since I started my college journey,
+                    I've encountered and tackled
+                    many various and challenging obstacles and courses while gaining hands-on experience in the field. I
+                    love challenging myself with numerous projects and can't wait what my future holds!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-experiences secondaryBackground" id="section-experiences">
+        <div class="section-experiences-container">
+
+            <div class="experiences-body">
+                <div class="experiences-slides">
+                    <h1 class="experiences-header section-header">1</h1>
+                    <h2 class="experience-text section-text">Text</h2>
+                </div>
+                <div class="experiences-slides">
+                    <h1 class="experiences-header section-header">2</h1>
+                    <h2 class="experience-text section-text">Text</h2>
+                </div>
+                <div class="experiences-slides">
+                    <h1 class="experiences-header section-header">3</h1>
+                    <h2 class="experience-text section-text">Text</h2>
+                </div>
+            </div>
+
+            <a class="experience-sliderPrev" onclick="increaseExperienceSlides(-1)">&#10094;</a>
+            <a class="experience-sliderNext" onclick="increaseExperienceSlides(1)">&#10095;</a>
+
+            <div class="experiences-dotContainer">
+                <span class="experiences-dot" onclick="experienceSlides(1)"></span>
+                <span class="experiences-dot" onclick="experienceSlides(2)"></span>
+                <span class="experiences-dot" onclick="experienceSlides(3)"></span>
+            </div>
+        </div>
+    </section>
+    <script src="src/experienceTextSlider.js"></script>
+
+</body>
+
+</html>
