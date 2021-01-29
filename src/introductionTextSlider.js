@@ -11,8 +11,8 @@ function experienceSlides(n) {
 
 function showExperienceSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("experiences-slides");
-  var dots = document.getElementsByClassName("experiences-dot");
+  var slides = document.getElementsByClassName("introduction-slides");
+  var dots = document.getElementsByClassName("introduction-dot");
   if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
