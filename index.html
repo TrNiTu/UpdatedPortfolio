@@ -64,13 +64,12 @@
                 <div class="introduction-slides">
                     <h1 class="introduction-slide-header section-header">What're some fun facts about you?</h1>
                     <div class="introduction-text-wrapper">
-                        <h2 class="introduction-text section-text">I'm currently a Junior studying for a Bachelor's in
-                            Computer Science at the University of Nebraska-Lincoln. Ever since I started my college
-                            journey,
-                            I've encountered and tackled
-                            many various and challenging obstacles and courses while gaining hands-on experience in the
-                            field. I
-                            love challenging myself with numerous projects and can't wait what my future holds!</h2>
+                        <h2 class="introduction-text section-text">Other than developing awesome projects, I have a big
+                            passion for teaching myself guitar. I've been playing for only about a couple years, but
+                            with practice and time comes mastery! Besides training myself musically, I also train myself
+                            physically. I love going to the gym and programming my own workouts! I've started actively
+                            training for about two years as well and my training focus is both hypertrophy and strength
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -122,7 +121,7 @@
                         <li>Software Engineering</li>
                         <li>Technical Communication</li>
                         <li>Unix Programming Environment</li>
-                        <li>Wireless Communication Netowrks</li>
+                        <li>Wireless Communication Networks</li>
                     </ul>
                 </div>
                 <div class="experiences-column primaryBackground">
@@ -154,21 +153,131 @@
     <section class="coursePortfolio primaryBackground">
         <div class="coursePortfolio-container">
             <div class="coursePortfolio-header section-header">
-                <i class="fas fa-caret-left coursePortfolio-slide-prev"></i>
+                <i class="fas fa-caret-left coursePortfolio-slide-prev coursePortfolio-arrow"
+                    onclick="increaseCourseSlides(-1)"></i>
                 Course Portfolio
-                <i class="fas fa-caret-right coursePortfolio-slide-next"></i>
+                <i class="fas fa-caret-right coursePortfolio-slide-next coursePortfolio-arrow"
+                    onclick="increaseCourseSlides(1)"></i>
+            </div>
+            <div class="coursePortfolio-dot-container">
+                <span class="coursePortfolio-dot" onclick="courseSlides(1)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(2)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(3)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(4)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(5)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(6)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(7)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(8)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(9)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(10)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(11)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(12)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(13)"></span>
+                <span class="coursePortfolio-dot" onclick="courseSlides(14)"></span>
+            </div>
+            <div class="coursePortfolio-slides-wrapper">
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Automa Language and Composition</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE428</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: A</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Computer Science I</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE155E</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: A</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Computer Science II (Honors)</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE156H</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: B+</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Computer Systems Engineering</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE231</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: A</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Data Structures and Algorithms</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE310</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: A+</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Discrete Structures and Mathematics</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE235</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: A</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Introduction to Deep Learning</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE479</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: TBD</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Operating Systems Principles</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE451</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: B-</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Programming Language and Composition</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE322</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: A-</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Jeffrey S. Raike's Design Studio</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE401H/CSCE402H</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: TBD</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Software Engineering</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE361</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: A-</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Technical Communication</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: JGEN200</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: A</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Unix Programming Environment</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE251</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: A</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
+
+                <div class="coursePortfolio-slides">
+                    <h1 class="coursePortfolio-slides-header">Course Name: Wireless Communication Networks</h1>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Code: CSCE465</h2>
+                    <h2 class="coursePortfolio-slides-subtitle">Course Grade: TBD</h2>
+                    <p class="coursePortfolio-slides-text">Description</p>
+                </div>
             </div>
 
-            <div class="coursePortfolio-slide-wrapper">
 
-            </div>
-            <!-- Slider (14 slides)-->
-            <!-- Course Name: Example -->
-            <!-- Course Code: CSCE155E -->
-            <!-- Final Grade: A- -->
-            <!-- Description of course and what I've learned from it-->
 
-        </div>
+            <script src="src/coursePortfolioTextSlider.js"></script>
     </section>
 
 
@@ -185,11 +294,40 @@
             <div class="contact-header section-header">Let's link!</div>
             <div class="contact-subtitle section-text">Interested in learning more about me? Shoot me a message!</div>
             <div class="contact-btn-container">
-                <button class="contact-btn" type="submit">Contact</button> <!-- On-Click popup form -->
+                <button class="contact-btn" id="contact-btn" type="submit">Contact</button> <!-- On-Click popup form -->
             </div>
         </div>
-        </div>
     </section>
+
+    <form action="src/contact.php" class="form-contact hidden" id="form-contact">
+        <div class="form-container">
+
+            <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input class="contact-name" id="contact-name" placeholder="e.g. John Doe" required type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input class="contact-email" id="contact-email" placeholder="e.g. johndoe123@email.com" required
+                    type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea cols="20" id="contact-message" name="contact-message"
+                    placeholder="e.g. Hey! I really liked your website and I'm reaching out to learn more about you..."
+                    required rows="5"></textarea>
+            </div>
+
+            <div class="contact-submit-container">
+                <button id="contact-submit">Submit</button>
+            </div>
+
+            <a id="form-close">Close</a>
+        </div>
+        <script src="src/contact.js"></script>
+    </form>
 
 </body>
 

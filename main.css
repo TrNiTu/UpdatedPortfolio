@@ -1,6 +1,6 @@
 body {
     --color-primary: #e82b2b;
-    --color-primaryLight: #ffa4a4;
+    --color-primaryLight: #f15454;
     --color-primaryDark: #712a2a;
     --color-second: #4fcf51;
     --color-secondDark: #2b712a;
@@ -17,6 +17,7 @@ body {
 
 .topBarNavigation {
     position: fixed;
+    animation: topBarNavigation-swipe 1s ease;
 }
 
 .topBarNavigation-container i {
@@ -225,7 +226,6 @@ body {
     font-family: 'Roboto';
     justify-items: center;
     height: 60%;
-    overflow: scroll;
     width: 100%;
 }
 
@@ -254,6 +254,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: scroll;
     width: 90%;
 }
 
@@ -281,19 +282,70 @@ body {
     color: white;
 }
 
-.coursePortfolio-slide-wrapper {
+.coursePortfolio-arrow {
+    cursor: pointer; 
+}
+
+.coursePortfolio-arrow:hover {
+    transform: scale(1.25);
+    transition: 0.15s ease;
+}
+
+.coursePortfolio-slides-wrapper {
     align-items: center;
     display: flex;
     height: 100%;
-    width: 100%;   
+    justify-content: flex-start;
+    padding: 0 0 20rem 5rem;
+    width: 100%;
 }
 
-.coursePortfolio-slide-prev {
-    color: white;
+.coursePortfolio-slides {
+    animation: coursePortfolio-slides 0.5s ease;
+    color: #fff;
+    text-align: justify;
 }
 
-.coursePortfolio-slide-next {
-    color: white;
+.coursePortfolio-slides-header {
+    font-size: 2.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.coursePortfolio-slides-subtitle {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: -0.5rem 0;
+}
+
+.coursePortfolio-slides-text {
+    font-weight: 300;
+}
+
+.coursePortfolio-dot-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.slide-next, .slide-prev {
+    cursor: pointer;
+}
+
+.coursePortfolio-dot {
+    border: 0.15rem solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 0.85rem;
+    margin: 0 0.25rem;
+    transition: background-color 0.6s ease;
+    width: 0.85rem;
+}
+
+.coursePortfolio-active, .coursePortfolio-dot:hover {
+    background-color: #fff;
 }
 
 
@@ -357,7 +409,81 @@ body {
     background-color: #fff;
     color: var(--color-primary);
     transition: 0.5s ease;
+}
 
+/* Contact Form */
+
+.form-contact {
+    justify-content: center;    
+    display: flex;
+}
+.form-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 80vw;
+}
+
+.form-container a {
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.form-group {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+
+}
+
+.form-group label {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.form-group input {
+    border: 0.15rem solid #000;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    height: 2.5vw;
+    width: 40vw;
+}
+
+.form-group textarea {
+    border: 0.15rem solid #000;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    height: 12vw;
+    resize: none;
+    width: 40vw;
+}
+
+.contact-submit-container {
+    padding-top: 1rem;
+}
+
+.contact-submit-container button {
+    background-color: transparent;
+    border: 0.2rem solid var(--color-primary);
+    color: var(--color-primary);
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    height: 3vw;
+    width: 40vw;
+}
+
+.contact-submit-container button:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    filter: brightness(150%);
+    transition: 0.25s ease;
 }
 
 /* Secondary Styles */
@@ -376,6 +502,10 @@ body {
 
 .whiteBackground {
     background-color: #fff;
+}
+
+.hidden {
+    display: none;
 }
 
 .section-header {
@@ -399,6 +529,18 @@ body {
     letter-spacing: 0.15rem;
 }
 
+/* Animations */
+
+@keyframes coursePortfolio-slides {
+    0% { margin-left: -1500px;}
+    100% { margin-left: 0px;}
+}
+
+@keyframes introduction-slides {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
 @keyframes subtitle-slide {
     0% {margin-top: -144px;}
     5% {margin-top: -96px;}
@@ -413,7 +555,15 @@ body {
     to {visibility: visible;}
 }
 
-@keyframes introduction-slides {
-    0% {opacity: 0}
-    100% {opacity: 1}
+@keyframes topBarNavigation-swipe {
+    0% { margin-left: -1000px;}
+    100% {margin-left: 0px;}
 }
+
+/* Media Queries */
+
+/* Mobiles */
+
+/* Tablets */
+
+/* Latops */
