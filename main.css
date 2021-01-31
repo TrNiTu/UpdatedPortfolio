@@ -17,32 +17,26 @@ body {
 
 .topBarNavigation {
     align-items: center;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 2rem;
     display: flex;
     justify-content: space-between;
+    margin-left: 2rem;
+    padding: 0 0.5rem;
+    position: fixed;
     height: 4rem;
 }
 
-.topBarNavigation-leftColumn a {
-    font-size: 1.25rem;
-    color: #000000;
-    padding: 0 0.5rem;
-    text-decoration: none;
+.topBarNavigation-container i {
+    color: #000;
+    margin: 0 1.75rem;
+    transform: scale(2.5);
 }
 
-.topBarNavigation-leftColumn a:hover {
+.topBarNavigation-container i:hover {
     color: var(--color-primary);
-    transition: 0.25s;
-}
-
-.topBarNavigation-middleColumn a:hover {
-    color: var(--color-primary);
-    transition: 0.25s;
-}
-
-.topBarNavigation-rightColumn a img {
-    height: 3rem;
-    padding: 0 0.5rem;
-    width: 3rem;
+    transform: scale(3);
+    transition: 0.15s ease;
 }
 
 /* Initial Section */
@@ -209,7 +203,7 @@ body {
     width: 1rem;
 }
 
-.active, .introduction-dot:hover {
+.introduction-active, .introduction-dot:hover {
     background-color: #fff;
 }
 
@@ -219,7 +213,7 @@ body {
 /* Experiences Section */
 
 .experiences {
-    height: 100vh;
+    height: 85vh;
     width: 100vw;
 }
 
@@ -229,7 +223,7 @@ body {
 }
 
 .experiences-header {
-    font-family: 'Roboto';
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #000;
 }
@@ -274,8 +268,9 @@ body {
 
 .experiences-column {
     border-radius: 1rem;
+    box-shadow: 0.15rem 0.1rem 0.1rem 0.1rem var(--color-primaryDark);
     height: 100%;
-    width: 90%
+    width: 90%;
 }
 
 /* Course Portfolio Section */
@@ -284,17 +279,44 @@ body {
     width: 100vw;
 }
 
+.coursePortfolio-header {
+    color: white;
+}
+
 /* Project Portfolio Section */
 .projectPortfolio {
     height: 70vh;
     width: 100vw;
 }
 
+.projectPortfolio {
+    color: var(--color-second);
+}
+
 
 /* Contact Section */
 .contact {
-    height: 30vh;
+    height: 40vh;
     width: 100vw;
+}
+
+.contact-container {
+    align-items: flex-start;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-header {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contact-subtitle {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
 }
 
 
@@ -330,7 +352,7 @@ body {
 }
 
 .section-text {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.15rem;
     font-weight: 200;
     text-align: center;

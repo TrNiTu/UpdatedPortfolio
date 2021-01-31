@@ -1,0 +1,78 @@
+body {
+    --color-primary: #e55959;
+    --color-primaryLight: #ffa4a4;
+    --color-primaryDark: #712a2a;
+    --color-second: #4fcf51;
+    --color-secondDark: #2b712a;
+    --color-third: #5970e5;
+    --color-thirdDark: #2a2a71;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.topBarNavigation {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.topBarNavigation-leftColumn a {
+    font-size: 1.25rem;
+    color: #000000;
+    padding: 0 0.5rem;
+    text-decoration: none;
+}
+
+.topBarNavigation-leftColumn a:hover {
+    color: #aaa;
+    transition: 0.25s;
+}
+
+.topBarNavigation-middleColumn a:hover {
+    color: var(--color-primary);
+    transition: 0.25s;
+}
+
+.topBarNavigation-rightColumn a img {
+    height: 3rem;
+    padding: 0 0.5rem;
+    width: 3rem;
+}
+
+.contact-container {
+    background-color: var(--color-primary);
+    height: 100%;
+    background-color: var(--color-primary);
+    width: 100%;
+}
+
+.form-container {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2rem;
+    display: block;
+    height: 50vh;
+    justify-content: center;
+    width: 50vw;
+}
+
+.input-header {
+    align-items: center;
+    color: #000;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-message {
+    height: 20vh;
+    resize: none;
+    width: 30vw;
+}
