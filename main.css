@@ -225,6 +225,7 @@ body {
     font-family: 'Roboto';
     justify-items: center;
     height: 60%;
+    overflow: scroll;
     width: 100%;
 }
 
@@ -239,7 +240,6 @@ body {
 .experience-column-list {
     color: #fff;
     border-top: 0.15rem solid #fff;
-    border-bottom: 0.15rem solid #fff;
     font-size: 1rem;
     justify-content: center;
     list-style-type: none;
