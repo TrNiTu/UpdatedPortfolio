@@ -142,7 +142,7 @@ body {
 }
 
 .introduction-slides {
-    animation: introduction-slides 1s ease-in;
+    animation: fadeIn 1s ease-in;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -213,6 +213,7 @@ body {
 }
 
 .experiences-header {
+    animation: swipeIn 0.5s ease;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: var(--color-primary);
@@ -262,6 +263,10 @@ body {
     margin: -0.5rem 0 2rem 0;
 }
 
+.experiences-column li:hover {
+    transform: scale(1.5);
+}
+
 /* Course Portfolio Section */
 
 .coursePortfolio {
@@ -300,24 +305,27 @@ body {
 }
 
 .coursePortfolio-slides {
-    animation: coursePortfolio-slides 0.5s ease;
     color: #fff;
     text-align: justify;
 }
 
 .coursePortfolio-slides-header {
+    animation: swipeIn 0.5s ease;
     font-size: 2.5rem;
     margin-bottom: -0.5rem;
 }
 
 .coursePortfolio-slides-subtitle {
+    animation: swipeIn 0.5s ease;
     font-size: 1.75rem;
     font-weight: 400;
     margin: -0.5rem 0;
 }
 
 .coursePortfolio-slides-text {
+    animation: fadeIn 0.5s ease-in;
     font-weight: 300;
+    width: 80%;
 }
 
 .coursePortfolio-dot-container {
@@ -345,7 +353,6 @@ body {
 
 .coursePortfolio-link {
     color: #fff;
-    text-decoration: underline;
 }
 
 .coursePortfolio-link:hover {
@@ -355,6 +362,15 @@ body {
 
 .coursePortfolio-active, .coursePortfolio-dot:hover {
     background-color: #fff;
+}
+
+.coursePortfolio-slides-text a {
+    color: #fff;
+}
+
+.coursePortfolio-slides-text a:hover {
+    color: #aaa;
+    transition: 0.25s;
 }
 
 /* Project Portfolio Section */
@@ -566,7 +582,7 @@ body {
 
 /* Animations */
 
-@keyframes coursePortfolio-slides {
+@keyframes swipeIn {
     0% {
         margin-left: -1500px;
     }
@@ -575,7 +591,7 @@ body {
     }
 }
 
-@keyframes introduction-slides {
+@keyframes fadeIn {
     0% {
         opacity: 0
     }
