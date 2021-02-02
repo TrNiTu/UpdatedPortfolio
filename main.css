@@ -422,14 +422,14 @@ body {
 
 /* Contact Form */
 
-.form-contact {
-    /* display: none;
+/*.form-contact {
+    display: none;
     position: fixed;
-    overflow: auto; */
-}
+    overflow: auto; 
+}*/
 
-.form-modal {
-}
+/* .form-modal {
+} */
 
 .form-container {
     background-color: white;
