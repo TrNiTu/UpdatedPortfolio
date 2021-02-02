@@ -23,7 +23,7 @@
 
 const btn = document.getElementById("contact-btn");
 const form = document.getElementById("form-contact");
-const formClose = document.getElementById("form-close")[0];
+const formClose = document.getElementById("form-close");
 
 btn.onclick = function () {
     form.style.display = "flex";

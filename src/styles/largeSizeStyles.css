@@ -1,0 +1,624 @@
+body {
+    --color-primary: #e82b2b;
+    --color-primaryLight: #f15454;
+    --color-primaryDark: #712a2a;
+    --color-second: #4fcf51;
+    --color-secondDark: #2b712a;
+    --color-third: #5970e5;
+    --color-thirdDark: #2a2a71;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Top Bar Navigation Styles */
+
+.topBarNavigation {
+    position: fixed;
+    animation: topBarNavigation-swipe 1s ease;
+}
+
+.topBarNavigation-container i {
+    color: #000;
+    opacity: 0.75;
+    margin: 0 1.5rem;
+    transform: scale(2);
+}
+
+.topBarNavigation-container i:hover {
+    transform: scale(2.5);
+    transition: 0.15s ease;
+}
+
+/* Initial Section */
+
+.initial {
+    height: 20vh;
+    width: 100vw;
+}
+
+.initial-container {
+    margin: 2rem 0;
+    height: 100%;
+    width: 100%;
+}
+
+.initial-header {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.initial-header-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section-initial-header {
+    margin: 0;
+    position: relative;
+    color: #000000;
+}
+
+.initial-subtitle-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.initial-subtitle-slider {
+    height: 3rem;
+    overflow: hidden;
+}
+
+.initial-subtitle-slider div {
+    box-sizing: border-box;
+    font-weight: 600;
+    height: 3rem;
+    padding: 0.1rem 0.8rem;
+    margin-bottom: 0.1rem;
+    text-align: center;
+}
+
+.initial-sub1 {
+    animation: subtitle-slide 5s linear infinite, subtitle-visibility 0s 1.2s forwards;
+    color: var(--color-primary);
+    animation-delay: 1.2s;
+    visibility: hidden;
+}
+
+.initial-sub2 {
+    animation: subtitle-visibility 0s 1.2s forwards;
+    color: var(--color-primary);
+    visibility: hidden;
+}
+
+.initial-sub3 {
+    animation: subtitle-visibility 0s 1.2s forwards;
+    color: var(--color-primary);
+    visibility: hidden;
+}
+
+.section-initial-avatar {
+    padding: 2rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.section-initial-avatar img {
+    height: 17.5rem;
+    width: 17.5rem;
+}
+
+.section-initial-avatar img:hover {
+    height: 20rem;
+    width: 20rem;
+    transition: 0.5s;
+}
+
+/* Introduction Section */
+
+.introduction {
+    height: 65vh;
+    width: 100vw;
+}
+
+.introduction-container {
+    height: 100%;
+    width: 100%;
+}
+
+.introduction-slide-header {
+    color: #fff;
+    height: 10%;
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.introduction-slides {
+    animation: introduction-slides 1s ease-in;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.introduction-slides-wrapper {
+    align-items: center;
+    display: flex;
+    height: 95%;
+    justify-content: center;
+    width: 100%;
+}
+
+.introduction-text-wrapper {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.introduction-text-wrapper h2 {
+    color: #fff;
+    width: 60vw;
+}
+
+.introduction-dot-container {
+    align-items: center;
+    display: flex;
+    height: 5%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.slide-next, .slide-prev {
+    cursor: pointer;
+}
+
+.introduction-dot {
+    border: 0.15rem solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 1rem;
+    margin: 0 0.5rem;
+    transition: background-color 0.6s ease;
+    width: 1rem;
+}
+
+.introduction-active, .introduction-dot:hover {
+    background-color: #fff;
+}
+
+/* Experiences Section */
+
+.experiences {
+    height: 75vh;
+    width: 100vw;
+}
+
+.experiences-container {
+    height: 100%;
+    width: 100%;
+}
+
+.experiences-header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.experiences-column-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: 'Roboto';
+    justify-items: center;
+    height: 60%;
+    width: 100%;
+}
+
+.experiences-column-header {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+}
+
+.experience-column-list {
+    color: #fff;
+    border-top: 0.15rem solid #fff;
+    font-size: 1rem;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.experiences-column {
+    align-items: center;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: scroll;
+    width: 90%;
+}
+
+.experiences-column i {
+    color: #fff;
+    transform: scale(3);
+    margin: -0.5rem 0 2rem 0;
+}
+
+/* Course Portfolio Section */
+
+.coursePortfolio {
+    height: 70vh;
+    width: 100vw;
+}
+
+.coursePortfolio-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.coursePortfolio-header {
+    color: white;
+}
+
+.coursePortfolio-arrow {
+    cursor: pointer;
+}
+
+.coursePortfolio-arrow:hover {
+    transform: scale(1.25);
+    transition: 0.15s ease;
+}
+
+.coursePortfolio-slides-wrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    padding: 0 0 20rem 5rem;
+    width: 100%;
+}
+
+.coursePortfolio-slides {
+    animation: coursePortfolio-slides 0.5s ease;
+    color: #fff;
+    text-align: justify;
+}
+
+.coursePortfolio-slides-header {
+    font-size: 2.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.coursePortfolio-slides-subtitle {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: -0.5rem 0;
+}
+
+.coursePortfolio-slides-text {
+    font-weight: 300;
+}
+
+.coursePortfolio-dot-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.slide-next, .slide-prev {
+    cursor: pointer;
+}
+
+.coursePortfolio-dot {
+    border: 0.15rem solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 0.85rem;
+    margin: 0 0.25rem;
+    transition: background-color 0.6s ease;
+    width: 0.85rem;
+}
+
+.coursePortfolio-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.coursePortfolio-link:hover {
+    color: #aaa;
+    transition: 0.25s;
+}
+
+.coursePortfolio-active, .coursePortfolio-dot:hover {
+    background-color: #fff;
+}
+
+/* Project Portfolio Section */
+
+.projectPortfolio {
+    height: 70vh;
+    width: 100vw;
+}
+
+.projectPortfolio {
+    color: var(--color-primary);
+}
+
+/* Contact Section */
+
+.contact {
+    height: 30vh;
+    width: 100vw;
+}
+
+.contact-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.contact-header {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contact-subtitle {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contact-btn-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.contact-btn {
+    border: 0.15rem solid #fff;
+    border-color: #fff;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.75rem;
+    height: 3.5rem;
+    width: 14rem;
+}
+
+.contact-btn:hover {
+    background-color: #fff;
+    color: var(--color-primary);
+    transition: 0.5s ease;
+}
+
+/* Contact Form */
+
+/*.form-contact {
+    display: none;
+    position: fixed;
+    overflow: auto; 
+}*/
+
+/* .form-modal {
+} */
+
+.form-container {
+    background-color: white;
+    align-items: center;
+    bottom: 0;
+    box-shadow: 2px 2px 2px 2px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    height: 80%;
+    right: 0;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    z-index: 1;
+}
+
+.form-close {
+    align-self: flex-end;
+    color: #000;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 0 1rem 1rem 0;
+    user-select: none;
+}
+
+.form-close:hover {
+    transform: scale(1.5);
+    transition: 0.25s;
+}
+
+.form-container a {
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.form-group {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.form-group label {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.form-group input {
+    border: 0.15rem solid #000;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    height: 2.5vw;
+    width: 40vw;
+}
+
+.form-group textarea {
+    border: 0.15rem solid #000;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    height: 12vw;
+    resize: none;
+    width: 40vw;
+}
+
+.contact-submit-container {
+    padding-top: 1rem;
+}
+
+.contact-submit-container button {
+    background-color: transparent;
+    border: 0.2rem solid var(--color-primary);
+    color: var(--color-primary);
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    height: 3vw;
+    width: 40vw;
+}
+
+.contact-submit-container button:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    filter: brightness(150%);
+    transition: 0.25s ease;
+}
+
+/* Secondary Styles */
+
+.primaryBackground {
+    background-color: var(--color-primary);
+}
+
+.secondBackground {
+    background-color: var(--color-second);
+}
+
+.thirdBackground {
+    background-color: var(--color-third);
+}
+
+.whiteBackground {
+    background-color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.section-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 0.15rem;
+}
+
+/* Animations */
+
+@keyframes coursePortfolio-slides {
+    0% {
+        margin-left: -1500px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes introduction-slides {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes subtitle-slide {
+    0% {
+        margin-top: -144px;
+    }
+    5% {
+        margin-top: -96px;
+    }
+    33% {
+        margin-top: -96px;
+    }
+    38% {
+        margin-top: -50px;
+    }
+    66% {
+        margin-top: -50px;
+    }
+    71% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+@keyframes subtitle-visibility {
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes topBarNavigation-swipe {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
