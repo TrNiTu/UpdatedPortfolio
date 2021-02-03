@@ -376,13 +376,38 @@ body {
 /* Project Portfolio Section */
 
 .projectPortfolio {
-    height: 70vh;
+    height: 90vh;
     width: 100vw;
 }
 
-.projectPortfolio {
+.projectPortfolio h1 {
     color: var(--color-primary);
+    padding: 0;
+    margin: 0;
 }
+
+.projectPortfolio-image-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.projectPortfolio-imageBackground {
+    filter: brightness(20%);
+    height: 375px;
+    width: 375px;
+}
+
+.projectPortfolio-text-wrapper {
+    background-color: orange;
+    height: 100%;
+    width: 100%;
+}
+
 
 /* Contact Section */
 
