@@ -376,7 +376,7 @@ body {
 /* Project Portfolio Section */
 
 .projectPortfolio {
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
 }
 
@@ -391,15 +391,65 @@ body {
     display: flex;
     height: 100%;
     justify-content: center;
-    margin: 0;
+    margin: -3rem 0;
     padding: 0;
     width: 100%;
 }
 
-.projectPortfolio-imageBackground {
-    filter: brightness(20%);
-    height: 375px;
-    width: 375px;
+.projectPortfolio-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0.25rem;
+}
+
+.projectPortfolio-image img {
+    filter: brightness(30%);
+    height: 325px;
+    width: 325px;
+}
+
+.projectPortfolio-image h2, .projectPortfolio-image p {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 20%;
+}
+/* 
+.projectPortfolio-image img:hover {
+    filter: brightness(15%);
+    transition: 0.35s;
+} */
+
+.projectPortfolio-image h2 {
+    font-weight: 600;
+}
+
+.projectPortfolio-image p {
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 0;
+}
+
+.projectPortfolio-image:hover h2 {
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.projectPortfolio-image:hover p {
+    opacity: 1;
+    justify-content: center;
+    transition: 0.25s;
+}
+
+.projectPortfolio-image:hover p a {
+    color: #fff;
+}
+
+.projectPortfolio-image:hover p a:hover {
+    color: var(--color-primary);
+    transition: 0.25s;
 }
 
 .projectPortfolio-text-wrapper {
