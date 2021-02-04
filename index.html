@@ -10,8 +10,8 @@
         rel="stylesheet">
     <!--<link rel="stylesheet" media="(max-width: 600px)" href="src/styles/smallSizeStyles.css">
     <link rel="stylesheet" media="(min-width: 600px)" href="src/styles/mediumSizeStyles.css">-->
-    <link rel="stylesheet" href="src/styles/largeSizeStyles.css">
     <script src="https://kit.fontawesome.com/95d53b1832.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles/largeSizeStyles.css">
     <title>Trey Turner | Home</title>
 </head>
 
@@ -20,18 +20,19 @@
     <nav class="topBarNavigation">
 
         <div class="topBarNavigation-container">
-            <a href="https://www.linkedin.com/in/trnitu" target="_blank"><i class="fab fa-linkedin-in 4x"></i></a>
-            <a href="https://www.github.com/trnitu" target="_blank"><i class="fab fa-github 4x"></i></a>
-            <a href="https://www.facebook.com/trnitu" target="_blank"><i class="fab fa-facebook 4x"></i></a>
+            <a href="https://www.linkedin.com/in/trnitu" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/trnitu" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.github.com/trnitu" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <div class="topBarNavigation-container">
-            <i class="fas fa-sun lightColorTheme activeTheme"></i>
-            <i class="fas fa-moon darkColorTheme"></i>
-            <i class="fas fa-random randomColorTheme"></i>
+            <i class="fas fa-sun activeTheme secondaryColor" id="lightColorTheme" onclick="changeTheme(lightColorTheme)"></i>
+            <i class="fas fa-moon secondaryColor" id="darkColorTheme" onclick="changeTheme(darkColorTheme)"></i>
+            <i class="fas fa-random primaryColor" id="randomColorTheme" onclick="changeTheme(randomColorTheme)"></i>
         </div>
+        <script src="src/js/colorThemeHandler.js"></script>
     </nav>
 
-    <section class="initial whiteBackground" id="section-initial">
+    <section class="initial" id="section-initial">
         <div class="initial-container">
             <div class="initial-header-wrapper">
                 <h1 class="initial-header section-header"></h1>
@@ -97,7 +98,7 @@
         <script src="src/introductionTextSlider.js"></script>
     </section>
 
-    <section class="experiences whiteBackground">
+    <section class="experiences">
         <div class="experiences-container">
             <h1 class="experiences-header section-header">Experiences Overbrief</h1>
             <div class="experiences-column-container">
@@ -384,7 +385,7 @@
     </section>
 
 
-    <section class="projectPortfolio whiteBackground">
+    <section class="projectPortfolio">
 
         <h1 class="section-header">Here are some projects that I have worked on...</h1>
 

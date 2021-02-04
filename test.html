@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/95d53b1832.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
@@ -79,41 +80,20 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </style>
 </head>
 <body>
-
-<h2>Popup Form</h2>
-<p>Click on the button at the bottom of this page to open the login form.</p>
-<p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>
-
-<button class="open-button" onclick="openForm()">Open Form</button>
-
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Login</h1>
-
-    <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Enter Name" name="name" required>
-
-    <label for="email"><b>Email</b></label>
-    <input type="email" placeholder="Enter Email" name="email" required>
-
-    <label for="message"><b>Message</b></label>
-    <textarea required name="" id="" cols="30" rows="10" placeholder="Hello, I really liked your website and I wanted to reach out..." style="resize: none;"></textarea>
-
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    
-  </form>
+  <span style="font-size: 3em; color: #e82b2b;">
+    <i class="fas fa-camera"></i>
+  </span>
+  
+  <span style="font-size: 48px; color: Dodgerblue;">
+    <i class="fas fa-camera"></i>
+  </span>
+  
+  <span style="font-size: 3rem;">
+    <span style="color: Mediumslateblue;">
+    <i class="fas fa-camera"></i>
+    </span>
+  </span>
 </div>
-
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
 
 </body>
 </html>
