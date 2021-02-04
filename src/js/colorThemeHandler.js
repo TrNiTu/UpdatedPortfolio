@@ -29,6 +29,6 @@ function changeTheme(theme) {
     } else if(theme === randomColorTheme) {
         body.classList.add("random");
         body.style.setProperty("--color-primary", generateRandomColor());
-        body.style.setProperty("--color-primaryText", generateRandomColor())
+        body.style.setProperty("--color-primaryText", generateRandomColor());
     }
 }

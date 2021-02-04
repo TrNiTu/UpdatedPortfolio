@@ -12,6 +12,7 @@
     <link rel="stylesheet" media="(min-width: 600px)" href="src/styles/mediumSizeStyles.css">-->
     <script src="https://kit.fontawesome.com/95d53b1832.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/styles/largeSizeStyles.css">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     <title>Trey Turner | Home</title>
 </head>
 
@@ -25,8 +26,8 @@
             <a href="https://www.github.com/trnitu" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <div class="topBarNavigation-container">
-            <i class="fas fa-sun activeTheme secondaryColor" id="lightColorTheme" onclick="changeTheme(lightColorTheme)"></i>
-            <i class="fas fa-moon secondaryColor" id="darkColorTheme" onclick="changeTheme(darkColorTheme)"></i>
+            <i class="fas fa-sun activeTheme primaryAccent" id="lightColorTheme" onclick="changeTheme(lightColorTheme)"></i>
+            <i class="fas fa-moon primaryAccent" id="darkColorTheme" onclick="changeTheme(darkColorTheme)"></i>
             <i class="fas fa-random primaryColor" id="randomColorTheme" onclick="changeTheme(randomColorTheme)"></i>
         </div>
         <script src="src/js/colorThemeHandler.js"></script>
@@ -35,14 +36,14 @@
     <section class="initial" id="section-initial">
         <div class="initial-container">
             <div class="initial-header-wrapper">
-                <h1 class="initial-header section-header"></h1>
-                <script src="src/animatedText/initialHeaderHandler.js"></script>
+                <h1 class="initial-header section-header primaryAccent"></h1>
+                <script src="src/js/initialHeaderHandler.js"></script>
             </div>
             <div class="initial-subtitle-wrapper">
                 <div class="initial-subtitle-slider">
-                    <div class="initial-sub1 section-subtitle">Student</div>
-                    <div class="initial-sub2 section-subtitle">Designer</div>
-                    <div class="initial-sub3 section-subtitle">Developer</div>
+                    <div class="initial-sub1 section-subtitle primaryColor">Student</div>
+                    <div class="initial-sub2 section-subtitle primaryColor">Designer</div>
+                    <div class="initial-sub3 section-subtitle primaryColor">Developer</div>
                 </div>
             </div>
         </div>
@@ -52,9 +53,9 @@
         <div class="introduction-container">
             <div class="introduction-slides-wrapper">
                 <div class="introduction-slides">
-                    <h1 class="introduction-slide-header section-header">Nice to meet you!</h1>
+                    <h1 class="introduction-slide-header section-header secondaryColor">Nice to meet you!</h1>
                     <div class="introduction-text-wrapper">
-                        <h2 class="introduction-text section-text">I'm currently a Junior studying for a Bachelor of
+                        <h2 class="introduction-text section-text secondaryColor">I'm currently a Junior studying for a Bachelor of
                             Science degree
                             Computer Science at the University of Nebraska-Lincoln. Ever since I started my college
                             journey,
@@ -65,9 +66,9 @@
                     </div>
                 </div>
                 <div class="introduction-slides">
-                    <h1 class="introduction-slide-header section-header">Tell me more about yourself!</h1>
+                    <h1 class="introduction-slide-header section-header secondaryColor">Tell me more about yourself!</h1>
                     <div class="introduction-text-wrapper">
-                        <h2 class="introduction-text section-text">During high school I discovered that
+                        <h2 class="introduction-text section-text secondaryColor">During high school I discovered that
                             I enjoyed coding and decided to continue through college. I didn't do any clubs in high
                             school, however now that I'm in college I've began to join more clubs to gain more knowledge
                             and experience within the field as well as making new friends! Throughout my college career,
@@ -78,9 +79,9 @@
                     </div>
                 </div>
                 <div class="introduction-slides">
-                    <h1 class="introduction-slide-header section-header">What're some fun facts about you?</h1>
+                    <h1 class="introduction-slide-header section-header secondaryColor">What're some fun facts about you?</h1>
                     <div class="introduction-text-wrapper">
-                        <h2 class="introduction-text section-text">Other than developing awesome projects, I have a big
+                        <h2 class="introduction-text section-text secondaryColor">Other than developing awesome projects, I have a big
                             passion for teaching myself guitar. I've been playing for only about a couple years, but
                             with practice and time comes mastery! Besides training myself musically, I also train myself
                             physically. I love going to the gym and programming my own workouts! I've started actively
@@ -95,15 +96,15 @@
                 <span class="introduction-dot" onclick="experienceSlides(3)"></span>
             </div>
         </div>
-        <script src="src/introductionTextSlider.js"></script>
+        <script src="src/js/introductionTextSlider.js"></script>
     </section>
 
     <section class="experiences">
         <div class="experiences-container">
-            <h1 class="experiences-header section-header">Experiences Overbrief</h1>
+            <h1 class="experiences-header section-header primaryColor">Experiences Overbrief</h1>
             <div class="experiences-column-container">
 
-                <div class="experiences-column primaryBackground">
+                <div class="experiences-column primaryBackground secondaryColor">
                     <h1 class="experiences-column-header">Languages</h1>
                     <i class="fas fa-code"></i>
                     <ul class="experience-column-list">
@@ -120,7 +121,7 @@
                         <li>- More soon! -</li>
                     </ul>
                 </div>
-                <div class="experiences-column primaryBackground">
+                <div class="experiences-column primaryBackground secondaryColor">
                     <h1 class="experiences-column-header">Courses</h1>
                     <i class="fas fa-university"></i>
                     <ul class="experience-column-list">
@@ -140,7 +141,7 @@
                         <li>Wireless Communication Networks</li>
                     </ul>
                 </div>
-                <div class="experiences-column primaryBackground">
+                <div class="experiences-column primaryBackground secondaryColor">
                     <h1 class="experiences-column-header">Dev Tools</h1>
                     <i class="fas fa-code-branch"></i>
                     <ul class="experience-column-list">
@@ -168,7 +169,7 @@
 
     <section class="coursePortfolio primaryBackground">
         <div class="coursePortfolio-container">
-            <div class="coursePortfolio-header section-header">
+            <div class="coursePortfolio-header section-header secondaryColor">
                 <i class="fas fa-caret-left coursePortfolio-slide-prev coursePortfolio-arrow"
                     onclick="increaseCourseSlides(-1)"></i>
                 Course Portfolio
@@ -191,7 +192,7 @@
                 <span class="coursePortfolio-dot" onclick="courseSlides(13)"></span>
                 <span class="coursePortfolio-dot" onclick="courseSlides(14)"></span>
             </div>
-            <div class="coursePortfolio-slides-wrapper">
+            <div class="coursePortfolio-slides-wrapper secondaryColor">
                 <div class="coursePortfolio-slides">
                     <h1 class="coursePortfolio-slides-header">Automata Language and Composition</h1>
                     <h2 class="coursePortfolio-slides-subtitle">Course Code: <a class="coursePortfolio-link"
@@ -324,7 +325,7 @@
                         industry. We communicate with the sponsors every week to update them on our progress as well as
                         develop a project for them during over the course of an academic year. If you're interested in
                         learning more about the Jeffrey S. Raikes Design Studio, click <a
-                            href="https://raikes.unl.edu/design-studio" target="_blank">here</a> for more information!
+                            class="coursePortfolio-link" href="https://raikes.unl.edu/design-studio" target="_blank">here</a> for more information!
                     </p>
                 </div>
 
@@ -381,13 +382,13 @@
 
 
 
-            <script src="src/coursePortfolioTextSlider.js"></script>
+            <script src="./src/js/coursePortfolioTextSlider.js"></script>
     </section>
 
 
     <section class="projectPortfolio">
 
-        <h1 class="section-header">Here are some projects that I have worked on...</h1>
+        <h1 class="section-header primaryColor">Here are some projects that I have worked on...</h1>
 
         <div class="projectPortfolio-image-container">
 
@@ -422,44 +423,13 @@
 
     <section class="contact primaryBackground" id="section-contact">
         <div class="contact-container">
-            <div class="contact-header section-header">Let's link!</div>
-            <div class="contact-subtitle section-text">Interested in reaching out? Shoot me a message!</div>
+            <div class="contact-header section-header secondaryColor">Let's link!</div>
+            <div class="contact-subtitle section-text secondaryColor">Interested in reaching out? Shoot me a message!</div>
             <div class="contact-btn-container">
                 <a href="mailto:treyniturner@gmail.com">
                     <button class="contact-btn" type="submit">Contact</button>
                 </a>
             </div>
-
-            <div class="form-modal">
-                <form action="src/contact.php" class="form-contact">
-                    <div class="form-container" id="form-contact">
-                        <span class="form-close" id="form-close">&times;</span>
-                        <div class="form-group">
-                            <label for="contact-name">Name</label>
-                            <input class="contact-name" id="contact-name" placeholder="e.g. John Doe" required
-                                type="text">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-email">Email</label>
-                            <input class="contact-email" id="contact-email" placeholder="e.g. johndoe123@email.com"
-                                required type="text">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-message">Message</label>
-                            <textarea cols="20" id="contact-message" name="contact-message"
-                                placeholder="e.g. Hey! I really liked your website and I'm reaching out to learn more about you..."
-                                required rows="5"></textarea>
-                        </div>
-
-                        <div class="contact-submit-container">
-                            <button id="contact-submit">Submit</button>
-                        </div>
-                    </div>
-            </div>
-            <script src="src/contact.js"></script>
-            </form>
         </div>
     </section>
 

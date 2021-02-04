@@ -1,7 +1,6 @@
 body {
     --color-primary: #e82b2b;
     --color-secondary: #fff;
-    --color-primaryText: #fff;
     --color-primaryAccent:  #18191a;
 
     background-color: var(--color-secondary);
@@ -14,9 +13,8 @@ body {
 }
 
 body.dark {
-    --color-primary: #1e1e3c;
     --color-secondary: #18191a;
-    --color-primaryText: #dea20c;
+    --color-primaryAccent:  #fff;
 
     background-color: var(--color-secondary);
     font-family: 'Poppins', sans-serif;
@@ -112,7 +110,6 @@ body.random {
 .section-initial-header {
     margin: 0;
     position: relative;
-    color: var(--color-primaryDark);
 }
 
 .initial-subtitle-wrapper {
@@ -137,20 +134,17 @@ body.random {
 
 .initial-sub1 {
     animation: subtitle-slide 5s linear infinite, subtitle-visibility 0s 1.2s forwards;
-    color: var(--color-primary);
     animation-delay: 1.2s;
     visibility: hidden;
 }
 
 .initial-sub2 {
     animation: subtitle-visibility 0s 1.2s forwards;
-    color: var(--color-primary);
     visibility: hidden;
 }
 
 .initial-sub3 {
     animation: subtitle-visibility 0s 1.2s forwards;
-    color: var(--color-primary);
     visibility: hidden;
 }
 
@@ -212,7 +206,6 @@ body.random {
 
 .introduction-text-wrapper {
     align-items: center;
-    color: var(--color-primaryLight);
     display: flex;
     margin: 0;
     padding: 0;
@@ -220,7 +213,6 @@ body.random {
 }
 
 .introduction-text-wrapper h2 {
-    color: var(--color-primaryLight);
     width: 60vw;
 }
 
@@ -238,7 +230,7 @@ body.random {
 }
 
 .introduction-dot {
-    border: 0.15rem solid var(--color-primaryLight);
+    border: 0.15rem solid var(--color-secondary);
     border-radius: 50%;
     cursor: pointer;
     display: inline-block;
@@ -249,7 +241,7 @@ body.random {
 }
 
 .introduction-active, .introduction-dot:hover {
-    background-color: var(--color-primaryLight);
+    background-color: var(--color-secondary);
 }
 
 /* Experiences Section */
@@ -268,7 +260,6 @@ body.random {
     animation: swipeIn 0.5s ease;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: var(--color-primary);
 }
 
 .experiences-column-container {
@@ -282,20 +273,19 @@ body.random {
 
 .experiences-column-header {
     align-items: center;
-    color: var(--color-primaryLight);
     display: flex;
     font-size: 2.5rem;
     justify-content: center;
 }
 
 .experience-column-list {
-    color: var(--color-primaryLight);
-    border-top: 0.15rem solid var(--color-primaryLight);
+    border-top: 0.15rem solid var(--color-secondary);
     font-size: 1rem;
     justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0.5rem 0;
+    transition: 0.25s ease-in-out;
     text-align: center;
 }
 
@@ -311,13 +301,12 @@ body.random {
 }
 
 .experiences-column i {
-    color: var(--color-primaryLight);
     transform: scale(3);
     margin: -0.5rem 0 2rem 0;
 }
 
 .experiences-column li:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 
 /* Course Portfolio Section */
@@ -358,7 +347,6 @@ body.random {
 }
 
 .coursePortfolio-slides {
-    color: var(--color-primaryLight);
     text-align: justify;
 }
 
@@ -394,7 +382,7 @@ body.random {
 }
 
 .coursePortfolio-dot {
-    border: 0.15rem solid #fff;
+    border: 0.15rem solid var(--color-secondary);
     border-radius: 50%;
     cursor: pointer;
     display: inline-block;
@@ -409,21 +397,16 @@ body.random {
 }
 
 .coursePortfolio-link:hover {
-    color: #aaa;
+    color: var(--color-primaryAccent);
     transition: 0.25s;
 }
 
 .coursePortfolio-active, .coursePortfolio-dot:hover {
-    background-color: var(--color-primaryLight);
+    background-color: var(--color-secondary);
 }
 
 .coursePortfolio-slides-text a {
-    color: var(--color-primaryLight);
-}
-
-.coursePortfolio-slides-text a:hover {
-    color: #aaa;
-    transition: 0.25s;
+    color: var(--color-secondary);
 }
 
 /* Project Portfolio Section */
@@ -469,11 +452,6 @@ body.random {
     text-align: center;
     width: 15%;
 }
-/* 
-.projectPortfolio-image img:hover {
-    filter: brightness(15%);
-    transition: 0.35s;
-} */
 
 .projectPortfolio-image h2 {
     font-weight: 600;
@@ -506,7 +484,6 @@ body.random {
 }
 
 .projectPortfolio-text-wrapper {
-    background-color: orange;
     height: 100%;
     width: 100%;
 }
@@ -529,7 +506,6 @@ body.random {
 }
 
 .contact-header {
-    color: white;
     font-size: 3rem;
     text-align: center;
 }
@@ -547,122 +523,22 @@ body.random {
 }
 
 .contact-btn {
-    border: 0.15rem solid #fff;
-    border-color: #fff;
+    border: 0.15rem solid var(--color-secondary);
+    border-color: var(--color-secondary);
     border-radius: 2rem;
     background-color: transparent;
-    color: #fff;
+    color: var(--color-secondary);
     cursor: pointer;
     font-size: 1.75rem;
     height: 3.5rem;
+    transition: 0.25s ease-in-out;
     width: 14rem;
 }
 
 .contact-btn:hover {
-    background-color: #fff;
+    background-color: var(--color-secondary);
     color: var(--color-primary);
     transition: 0.5s ease;
-}
-
-/* Contact Form */
-
-/*.form-contact {
-    display: none;
-    position: fixed;
-    overflow: auto; 
-}*/
-
-/* .form-modal {
-} */
-
-.form-container {
-    background-color: white;
-    align-items: center;
-    bottom: 0;
-    box-shadow: 2px 2px 2px 2px;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    left: 0;
-    height: 80%;
-    right: 0;
-    position: fixed;
-    top: 0;
-    width: 80%;
-    z-index: 1;
-}
-
-.form-close {
-    align-self: flex-end;
-    color: var(--color-primaryDark);
-    cursor: pointer;
-    font-size: 2rem;
-    margin: 0 1rem 1rem 0;
-    user-select: none;
-}
-
-.form-close:hover {
-    transform: scale(1.5);
-    transition: 0.25s;
-}
-
-.form-container a {
-    color: var(--color-primary);
-    cursor: pointer;
-}
-
-.form-group {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem 0;
-}
-
-.form-group label {
-    color: var(--color-primaryLight);
-    font-family: sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-.form-group input {
-    border: 0.15rem solid var(--color-primaryDark);
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    height: 2.5vw;
-    width: 40vw;
-}
-
-.form-group textarea {
-    border: 0.15rem solid var(--color-primaryLight);
-    font-family: sans-serif;
-    font-size: 1.25rem;
-    height: 12vw;
-    resize: none;
-    width: 40vw;
-}
-
-.contact-submit-container {
-    padding-top: 1rem;
-}
-
-.contact-submit-container button {
-    background-color: transparent;
-    border: 0.2rem solid var(--color-primary);
-    color: var(--color-primary);
-    cursor: pointer;
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    height: 3vw;
-    width: 40vw;
-}
-
-.contact-submit-container button:hover {
-    background-color: var(--color-primary);
-    color: #fff;
-    filter: brightness(150%);
-    transition: 0.25s ease;
 }
 
 /* Secondary Styles */
@@ -672,16 +548,19 @@ body.random {
     transition: 0.25s ease-in-out;
 }
 
-.primaryColor {
-    color: var(--color-primary) !important;
-}
-
 .primaryAccent {
     color: var(--color-primaryAccent) !important;
+    transition: 0.25s ease-in-out;
 }
 
-.hidden {
-    display: none;
+.primaryColor {
+    color: var(--color-primary) !important;
+    transition: 0.25s ease-in-out;
+}
+
+.secondaryColor {
+    color: var(--color-secondary) !important;
+    transition: 0.25s ease-in-out;
 }
 
 .section-header {
