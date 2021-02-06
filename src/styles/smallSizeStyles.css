@@ -1,5 +1,5 @@
 body {
-    --color-primary: #e82b2b;
+    --color-primary: #e8a32b;
     --color-secondary: #fff;
     --color-primaryAccent:  #18191a;
 
@@ -41,8 +41,11 @@ body.random {
 /* Top Bar Navigation Styles */
 
 .topBarNavigation {
-    position: fixed;
     animation: topBarNavigation-swipe 1s ease;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
 }
 
 .topBarNavigation-container i {
@@ -73,14 +76,9 @@ body.random {
     color: var(--color-primaryAccent) !important;
 }
 
-
-.fa-random {
+.fa-palette {
     filter: brightness(40%);
 }
-
-/* .activeTheme {
-} */
-
 
 /* Initial Section */
 
@@ -258,14 +256,12 @@ body.random {
 
 .experiences-header {
     animation: swipeIn 0.5s ease;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
 .experiences-column-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    font-family: 'Roboto';
     justify-items: center;
     height: 60%;
     width: 100%;
@@ -416,10 +412,11 @@ body.random {
     width: 100vw;
 }
 
-.projectPortfolio h1 {
+.projectPortfolio-header {
     color: var(--color-primary);
     padding: 0;
     margin: 0;
+    position: absolute;
 }
 
 .projectPortfolio-image-container {
@@ -487,7 +484,6 @@ body.random {
     height: 100%;
     width: 100%;
 }
-
 
 /* Contact Section */
 
@@ -564,7 +560,6 @@ body.random {
 }
 
 .section-header {
-    font-family: 'Poppins', sans-serif;
     font-size: 3.5rem;
     font-weight: 600;
     text-align: center;
@@ -577,7 +572,6 @@ body.random {
 }
 
 .section-text {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.15rem;
     font-weight: 200;
     text-align: center;

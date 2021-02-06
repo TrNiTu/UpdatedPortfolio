@@ -9,10 +9,10 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Poppins&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" media="(max-width: 600px)" href="src/styles/smallSizeStyles.css">
-    <link rel="stylesheet" media="(min-width: 600px)" href="src/styles/mediumSizeStyles.css">
+    <link rel="stylesheet" media="(min-width: 600px) and (max-width: 1200px)" href="src/styles/mediumSizeStyles.css">
     <script src="https://kit.fontawesome.com/95d53b1832.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/styles/largeSizeStyles.css">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" media="(min-width: 1200px)" href="src/styles/largeSizeStyles.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <title>Trey Turner | Home</title>
 </head>
 
@@ -28,7 +28,7 @@
         <div class="topBarNavigation-container">
             <i class="fas fa-sun activeTheme primaryAccent" id="lightColorTheme" onclick="changeTheme(lightColorTheme)"></i>
             <i class="fas fa-moon primaryAccent" id="darkColorTheme" onclick="changeTheme(darkColorTheme)"></i>
-            <i class="fas fa-random primaryColor" id="randomColorTheme" onclick="changeTheme(randomColorTheme)"></i>
+            <i class="fas fa-palette primaryColor" id="randomColorTheme" onclick="changeTheme(randomColorTheme)"></i>
         </div>
         <script src="src/js/colorThemeHandler.js"></script>
     </nav>
@@ -388,7 +388,7 @@
 
     <section class="projectPortfolio">
 
-        <h1 class="section-header primaryColor">Here are some projects that I have worked on...</h1>
+        <div class="projectPortfolio-header section-header primaryColor">Here are some projects that I have worked on...</div>
 
         <div class="projectPortfolio-image-container">
 

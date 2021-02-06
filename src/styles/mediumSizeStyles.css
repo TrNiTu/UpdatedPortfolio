@@ -1,11 +1,11 @@
 body {
-    --color-primary: #e82b2b;
+    --color-primary: #2be880;
     --color-secondary: #fff;
     --color-primaryAccent:  #18191a;
 
     background-color: var(--color-secondary);
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     margin: 0;
     overflow-x: hidden;
@@ -18,7 +18,7 @@ body.dark {
 
     background-color: var(--color-secondary);
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     margin: 0;
     overflow-x: hidden;
@@ -31,7 +31,7 @@ body.random {
 
     background-color: var(--color-secondary);
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     margin: 0;
     overflow-x: hidden;
@@ -41,8 +41,12 @@ body.random {
 /* Top Bar Navigation Styles */
 
 .topBarNavigation {
-    position: fixed;
     animation: topBarNavigation-swipe 1s ease;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
 }
 
 .topBarNavigation-container i {
@@ -74,12 +78,9 @@ body.random {
 }
 
 
-.fa-random {
+.fa-palette {
     filter: brightness(40%);
 }
-
-/* .activeTheme {
-} */
 
 
 /* Initial Section */
@@ -184,7 +185,7 @@ body.random {
     height: 10%;
     margin: 0;
     padding: 2rem 0;
-    width: 100%;
+    width: 90%;
 }
 
 .introduction-slides {
@@ -234,10 +235,10 @@ body.random {
     border-radius: 50%;
     cursor: pointer;
     display: inline-block;
-    height: 1rem;
+    height: 0.75rem;
     margin: 0 0.5rem;
     transition: background-color 0.6s ease;
-    width: 1rem;
+    width: 0.75rem;
 }
 
 .introduction-active, .introduction-dot:hover {
@@ -247,7 +248,7 @@ body.random {
 /* Experiences Section */
 
 .experiences {
-    height: 75vh;
+    height: 60vh;
     width: 100vw;
 }
 
@@ -258,35 +259,32 @@ body.random {
 
 .experiences-header {
     animation: swipeIn 0.5s ease;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
 .experiences-column-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    font-family: 'Roboto';
     justify-items: center;
-    height: 60%;
+    height: 70%;
     width: 100%;
 }
 
 .experiences-column-header {
     align-items: center;
     display: flex;
-    font-size: 2.5rem;
     justify-content: center;
 }
 
 .experience-column-list {
     border-top: 0.15rem solid var(--color-secondary);
-    font-size: 1rem;
     justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0.5rem 0;
     transition: 0.25s ease-in-out;
     text-align: center;
+    width: 80%;
 }
 
 .experiences-column {
@@ -302,11 +300,11 @@ body.random {
 
 .experiences-column i {
     transform: scale(3);
-    margin: -0.5rem 0 2rem 0;
+    margin: 1rem 0 2rem 0;
 }
 
 .experiences-column li:hover {
-    transform: scale(1.25);
+    transform: scale(1.15);
 }
 
 /* Course Portfolio Section */
@@ -352,13 +350,11 @@ body.random {
 
 .coursePortfolio-slides-header {
     animation: swipeIn 0.5s ease;
-    font-size: 2.5rem;
     margin-bottom: -0.5rem;
 }
 
 .coursePortfolio-slides-subtitle {
     animation: swipeIn 0.5s ease;
-    font-size: 1.75rem;
     font-weight: 400;
     margin: -0.5rem 0;
 }
@@ -366,7 +362,7 @@ body.random {
 .coursePortfolio-slides-text {
     animation: fadeIn 0.5s ease-in;
     font-weight: 300;
-    width: 80%;
+    width: 70%;
 }
 
 .coursePortfolio-dot-container {
@@ -412,14 +408,15 @@ body.random {
 /* Project Portfolio Section */
 
 .projectPortfolio {
-    height: 80vh;
+    height: 70vh;
     width: 100vw;
 }
 
-.projectPortfolio h1 {
+.projectPortfolio-header {
     color: var(--color-primary);
     padding: 0;
     margin: 0;
+    position: absolute;
 }
 
 .projectPortfolio-image-container {
@@ -427,8 +424,6 @@ body.random {
     display: flex;
     height: 100%;
     justify-content: center;
-    margin: -3rem 0;
-    padding: 0;
     width: 100%;
 }
 
@@ -437,20 +432,20 @@ body.random {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0rem 0.25rem;
 }
 
 .projectPortfolio-image img {
     filter: brightness(30%);
-    height: 325px;
-    width: 325px;
+    height: 250px;
+    width: 250px;
+    padding: 0 0.25rem;
 }
 
 .projectPortfolio-image h2, .projectPortfolio-image p {
     color: #fff;
     position: absolute;
     text-align: center;
-    width: 15%;
+    width: 25%;
 }
 
 .projectPortfolio-image h2 {
@@ -458,7 +453,7 @@ body.random {
 }
 
 .projectPortfolio-image p {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 300;
     opacity: 0;
 }
@@ -564,21 +559,19 @@ body.random {
 }
 
 .section-header {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
     text-align: center;
 }
 
 .section-subtitle {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
 }
 
 .section-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 200;
     text-align: center;
     letter-spacing: 0.15rem;
@@ -636,7 +629,7 @@ body.random {
 
 @keyframes topBarNavigation-swipe {
     0% {
-        margin-left: -1000px;
+        margin-left: -5000px;
     }
     100% {
         margin-left: 0px;
