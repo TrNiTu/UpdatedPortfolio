@@ -416,7 +416,6 @@ body.random {
     color: var(--color-primary);
     padding: 0;
     margin: 0;
-    position: absolute;
 }
 
 .projectPortfolio-image-container {
